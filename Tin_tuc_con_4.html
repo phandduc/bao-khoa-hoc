@@ -64,21 +64,11 @@
             background-color: #45a049;
         }
         .justify { text-align: justify; }
-        .video-container {
-            width: 100%; 
-            max-width: 800px; 
-            margin: auto;
-            border: 2px solid #ccc; 
-            border-radius: 10px;
-            overflow: hidden;
-            display: block;
-            margin: 0 auto; 
-        }
-
-        .video-container video {
-            width: 100%; 
-            height: auto; 
-            display: block; 
+        .iframe-container {
+            display: flex;
+            justify-content: center;  /* Căn giữa theo chiều ngang */
+            align-items: center;      /* Căn giữa theo chiều dọc */
+            height: 100vh;            /* Chiều cao đầy đủ của trang */
         }
         .image-container {
             width: 100%; 
@@ -106,7 +96,15 @@
         <p class="justify">Sản phẩm do Lê Văn Tuấn, Đặng Hữu Tài, Mai Xuân Sơn, Phan Tấn Sang, Hồ Văn Lý, sinh viên khoa cơ khí, trường Đại học Sư phạm Kỹ thuật - Đại học Đà Nẵng thực hiện.</p>
         <p class="justify">Lê Văn Tuấn, trưởng nhóm cho biết, nhóm mong muốn tạo ra những sản phẩm chén, đĩa từ thiên nhiên, thay thế các loại làm bằng xốp dùng một lần, ảnh hưởng sức khỏe con người và ô nhiễm môi trường. Do đó nguyên liệu được chọn là mo cau, bẹ măng, vỏ xơ dừa, các loại lá cây rất dồi dào trong tự nhiên, có hàm lượng cellulose cao nên khi ép tạo hình có độ bền, khả năng sử dụng cao.</p>
         <p class="justify">Trên máy có bộ phận dập piston xi lanh thủy lực, khuôn ép tạo hình chén đĩa cùng các bộ điều khiển và hệ thống vệ sinh... Khi ấn nút trên bảng điều khiển, hệ thống gia nhiệt bắt đầu hoạt động tăng nhiệt độ vào khuôn ép khoảng 120 - 180 độ C trong khoảng thời gian 60 - 90 giây. Khi đưa nguyên liệu vào khuôn ép, người dùng nhấn nút trên bảng điều khiển để cấp nguồn cho máy thủy lực. Piston thực hiện hành trình tạo lực ép dập tạo hình sản phẩm sau đó thu về xi lanh, kết thúc quá trình.</p>
-        <video class="video-container" src= "https://video.vnexpress.net/embed/v_409351" controls width="940" > </video>
+        <div class="iframe-container"> 
+            <iframe
+            allows="controls" 
+            width="850" height= 500
+            src="https://www.youtube.com/embed/78gycvjyxXk"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+        </div>
         <P class="justify">Trước khi đưa vào ép, mo cau được làm sạch bằng khí nén áp suất cao nhằm thổi bụi bẩn ra ngoài, tăng độ sạch cho bề mặt vật liệu. Sau khi tạo hình thành công chén đĩa được vệ sinh khử tia cực tím bằng đèn UV ở khay chứa của máy. Trong quá trình hoạt động khi có sự cố khẩn cấp, người dùng sẽ bấm nút để ngắt nguồn và các bộ phận sẽ dừng hoạt động.</P>
         <p class="justify">Thử nghiệm của nhóm cho thấy trong một lần ép tùy vào thời gian gia nhiệt đối với các vật liệu khác nhau thì năng suất máy khác nhau. Với mo cau, bẹ măng thời gian ép trong một phút cho ra một sản phẩm, tức một giờ máy tạo được 60 sản phẩm. Với các loại lá cây thời gian ép mỗi giờ khoảng 120 sản phẩm. Với mỗi vật liệu khác nhau sẽ điều chỉnh nhiệt độ phù hợp để tạo ra chất lượng sản phẩm tốt nhất.</p>
         <img class="image-container" src= "https://i1-vnexpress.vnecdn.net/2024/11/15/Chen-dia-mo-cau-9484-1731646203.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=pFWjKuoWaLMWjW6Gq9iNVw">
