@@ -75,7 +75,9 @@ a {
   .nav__name {
     display: none;
   }
-
+  .latest-news{
+    width: 100%;
+  }
   .nav__list {
     position: fixed;
     bottom: 2rem;
