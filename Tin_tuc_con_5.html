@@ -79,15 +79,11 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-        .video-container {
-            width: 100%; 
-            max-width: 800px; 
-            margin: auto;
-            border: 2px solid #ccc; 
-            border-radius: 10px;
-            overflow: hidden;
-            display: block;
-            margin: 0 auto; 
+        .iframe-container {
+            display: flex;
+            justify-content: center;  /* Căn giữa theo chiều ngang */
+            align-items: center;      /* Căn giữa theo chiều dọc */
+            height: 100vh;            /* Chiều cao đầy đủ của trang */
         }
     </style>
 </head>
@@ -97,12 +93,15 @@
     </header>
     <section id="topics">
         <p class="justify">Với ba con non sắp trưởng thành, hổ Bengal mẹ buộc phải săn thành công hươu đốm để cung cấp đủ thức ăn cho chúng. </p>
-        <iframe 
+        <div class="iframe-container"> 
+            <iframe
             allows="controls" 
-            width="940"
-            src="www.youtube.com.embed/ja4GNdU2vYc"
-            frameborder="0">
-        </iframe>
+            width="850" height= 500
+            src="https://www.youtube.com/embed/ja4GNdU2vYc"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+        </div>
         <p class="gradient-heart" class="center"> Hãy yêu thiên nhiên nhé </p>
         <p class="gradient-heart">❤️❤️❤️❤️❤️❤️❤️❤️</p>
     </section>
