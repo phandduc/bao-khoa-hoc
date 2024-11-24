@@ -258,14 +258,13 @@ main {
     height: auto;
     margin-bottom: 10px;
 }
-
 .news-item h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .news-item p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #555;
 }
 
@@ -273,11 +272,8 @@ main {
     list-style: none;
 }
 
-.latest-news li p {
+.latest-news ul li {
     margin: 10px 0;
-    float: left;
-    width: 40px;
-    padding: auto;
 }
 
 .latest-news ul li a {
