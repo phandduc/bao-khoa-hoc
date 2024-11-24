@@ -74,20 +74,11 @@
             display: block;
             margin: 0 auto; 
         }
-        .video-container {
-            width: 100%; 
-            max-width: 800px; 
-            margin: auto;
-            border: 2px solid #ccc; 
-            border-radius: 10px;
-            overflow: hidden;
-            display: block;
-            margin: 0 auto; 
-        }
-        .video-container video {
-            width: 100%; 
-            height: auto; 
-            display: block; 
+        .iframe-container {
+            display: flex;
+            justify-content: center;  /* Căn giữa theo chiều ngang */
+            align-items: center;      /* Căn giữa theo chiều dọc */
+            height: 100vh;            /* Chiều cao đầy đủ của trang */
         }
         .image-container img {
             width: 100%; 
@@ -107,9 +98,15 @@
         <P class="justify">Camera robot Swift có độ phân giải cao chụp chính xác ở khoảng cách đến 7 cm, tương đương, thậm chí cao hơn chất lượng khảo sát trên không truyền thống. Swift không phát thải và có khả năng chụp tối đa 1.000 km2 ảnh trong mỗi chuyến bay. Hoạt động ở độ cao từ 18.000 - đến 26.000 m, robot tự động nhỏ gọn này chỉ nặng 5,5 kg.</P>
         <P class="justify">Mạng lưới mới của Near Space Labs sẽ cung cấp dữ liệu chi tiết, cập nhật hàng quý. Tần suất cập nhật chưa từng có này cho phép các công ty bảo hiểm theo dõi điều kiện thời tiết thay đổi, đánh giá rủi ro chính xác hơn và định giá chính sách phù hợp. Điều này có thể cho phép họ quay trở lại những thị trường từng phải rời bỏ trước đây.</P>
         <P class="justify">Mạng lưới Swift có nhiều ưu điểm so với vệ tinh, drone hay máy bay. Khí cầu thời tiết có thể chạm tới độ cao gấp đôi máy bay hành trình. "Các khí cầu của chúng tôi chụp bằng 800.000 drone chỉ với một chuyến bay. Trong khi đó, các máy bay sẽ bay theo kiểu giống rắn, di chuyển qua lại suốt nhiều tuần để chụp dữ liệu mà chúng tôi có thể chụp trong vài giờ. Điều này đồng nghĩa, chúng tôi có thể làm nhanh hơn, tốt hơn và rẻ hơn", Matevosyan cho biết.</P>
-        <video class="video-container" src="Video/Robot Spot của Boston Dynamics có thể chơi trò -ném đồ bắt-.mp4" controls width="940">
-            <source src="Video/Robot Spot của Boston Dynamics có thể chơi trò -ném đồ bắt-.WebM">
-        </video>
+        <div class="iframe-container"> 
+            <iframe
+            allows="controls" 
+            width="850" height= 500
+            src="https://www.youtube.com/embed/NXMDv3Io5q0"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+        </div>
     </section>
     <footer>
         <p>&copy; Trang Web Khoa Học. Bản quyền thuộc nhóm 3.</p>
